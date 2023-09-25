@@ -30,6 +30,11 @@
             <td th:text="${student.lastName}"></td>
             <!-- Add more table cells for other student fields -->
         </tr>
+        <tr th:if="${searchResults.empty}">
+            <td colspan="3" class="err">
+                No record found
+            </td>
+        </tr>
         </tbody>
     </table>
     <a th:href="@{/eregistrar/students}" class="back-link">Back to List</a>

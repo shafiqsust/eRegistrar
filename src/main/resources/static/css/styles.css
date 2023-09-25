@@ -294,3 +294,7 @@ input[type="text"], input[type="number"], input[type="date"] {
     float: left;
     width: 70%;
 }
+.err{
+    color: red;
+    text-align: center;
+}

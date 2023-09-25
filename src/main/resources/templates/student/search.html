@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Students</title>
+  <link th:href="@{/css/styles.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<ul class="nav navbar-nav">
+  <li><a th:href="@{/eregistrar/home}">Home</a></li>
+  <li><a th:href="@{/eregistrar/students}">List of Students</a></li>
+  <li><a th:href="@{/eregistrar/students/register}">Register New Student</a></li>
+  <li><a href="/eregistrar/students/search">Search Students</a></li>
+</ul>
+
+<div class="container">
+  <h1>Search Students</h1>
+  <form th:action="@{/eregistrar/students/search}" method="post">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName">
+    </div>
+    <div class="form-group">
+      <button type="submit">Search</button>
+    </div>
+  </form>
+  <a th:href="@{/eregistrar/home}">Back to Home</a>
+</div>
+</body>
+</html>

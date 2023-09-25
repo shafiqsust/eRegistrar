@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <!-- Link the CSS file -->
+    <link th:href="@{/css/styles.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <ul class="nav navbar-nav">
+        <li><a th:href="@{/eregistrar/students}">List of Students</a></li>
+        <li><a th:href="@{/eregistrar/students/register}">Register New Student</a></li>
+        <li><a href="/eregistrar/students/search">Search Students</a></li>
+    </ul>
+
+<div class="container">
+    <h1>Welcome to eRegistrar</h1>
+    <p>It is an online Student Registration system for a University.</p>
+</div>
+</body>
+</html>

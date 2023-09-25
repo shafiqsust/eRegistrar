@@ -275,3 +275,22 @@ ul.nav li a:link, ul.nav li a:visited{
 ul.nav li a:hover{
     color: #c82333;
 }
+/*  Form customization */
+.form-group {
+    margin-bottom: 20px;
+    clear: both;
+    padding: 10px;
+}
+.form-group label{
+    float: left;
+    width: 25%;
+}
+
+.form-group .form-control {
+    /* float: left; */
+
+}
+input[type="text"], input[type="number"], input[type="date"] {
+    float: left;
+    width: 70%;
+}
